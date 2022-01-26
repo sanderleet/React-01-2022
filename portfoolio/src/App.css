@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+  font-size: xx-large;
+}
+
+body {
+  background-color: #171717;
+  color: #e2e2e2;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Intro-pic {
+  display: flex;
+  object-fit: cover;
+  width: 99.9%;
+  position:static;
+  max-width: max-content;
+  max-height:250px; 
+  margin: auto;
+  overflow:hidden
+}
+
+.centered1 h1 {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(241, 241, 241);
+
+}
+
+.Intro-pic:hover {
+  transition: .3s;
+  transform: scale(1.003);
+  cursor: pointer;
+  box-shadow: 0 2px 15px 0px rgb(121, 121, 121);
+  
+}
+
+.main-link-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main-link {
+  color: rgb(66, 18, 18);
+  background-color: grey;
+  height: 200px;
+  width: 300px;
+  margin-top: 20px;
+  padding: 20px 0;
+  border-radius: 666px;
+  text-align: center;
+}
+
+.main-link p {
+  font-family: 'Roboto';
+  color: azure;
+}
+
+.main-link-list img {
+  width:250px;
+  height: 160px;
+}
+
+.main-link:hover {
+  transition: .3s;
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 8px 10px 0px rgb(121, 121, 121);
+}
+
+.main-text {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+.rectangle {
+  height: 7px;
+  width: 60px;
+  background-color: brown;
+  margin: 50px auto;
+  
+}
+
+.footer {
+  border-top: groove 3px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: rgb(98, 108, 128);
+  z-index: 150;
+}
+
+.footer img {
+  height:16px;
+  padding: 2px 10px;
+  margin: -6px;
+}
+
+.footer2 {
+/*   border-top: groove 3px; */
+  width: 5%;
+  min-width: 90px;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  text-align: left;
+  position:fixed;
+  bottom: 10px;
+  left: 30px;
+  background-color: rgb(195, 199, 207);
+  z-index: 150;
+  box-shadow: 0 2px 15px 10px rgb(146, 146, 146);
+  border-radius: 6px;
+}
+
+.footer2 img {
+  height:16px;
+  padding: 2px 10px;
+  margin: -6px;
+}
+
+
+.footer a {
+  color: black;
+}
+
