@@ -1,0 +1,15 @@
+
+/* ei t;;ta idk */
+
+
+.item-card li{
+    display: inline-flex; 
+    flex-wrap: wrap;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center; 
+    font-size: 18px;
+    list-style-type: none;
+}
+
+/*  */

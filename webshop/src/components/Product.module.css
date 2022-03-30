@@ -1,0 +1,40 @@
+
+
+
+
+
+.Item {
+    display: flex; /* esemedvasakult paremale */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; /* elemendid v]rdsetele kaugustele */
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 2;
+    margin: 0 30%;
+    padding: 10px;
+    background-color: rgb(223, 236, 238);
+    text-align: center;
+}
+
+.Item img {
+    max-width: 200px;
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    
+}
+
+.Item button {
+    height: auto;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ItemPrice {
+    background-color: rgb(240, 227, 227);
+    margin: 0, 30%, 0 30%;
+    font-weight:bold;
+}

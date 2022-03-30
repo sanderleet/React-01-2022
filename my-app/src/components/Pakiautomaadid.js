@@ -18,8 +18,9 @@ return (
             {
                 if(element.A0_NAME === pakiautomaadiRiik) {
                 return <option key={element.ZIP}>{ element.NAME }</option>
-            } else {
-                return null;} 
+                    
+                } else {
+                     return null;} 
 
             }            
         )}

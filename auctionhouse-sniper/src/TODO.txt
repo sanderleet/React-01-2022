@@ -1,0 +1,111 @@
+
+AuctionHouse sniper (kahes versioonis) 
+
+    Mängu Marketi/AuctionHouse'i kalkulaator. (web-AH https://theunderminejournal.com, TradeSkillMaster addon)
+        Kasutaja saab luua valemeid esemete kohta ning app arvutab kulu/tulu/kasumi.
+        Esemete hinnad andmebaasist
+
+
+
+    v0.1 Algne versioon: Esemete hindade andmebaas kohalikus/serveri andmebaasis kasutajate loodud esmetest
+    v1.0 Teine versioon: Esemete hindade päringud läbi BlizzardApi //ja päringu tulemused salvestada  
+    v2.0 Lõppversioon: Esemete hindade andmebaas serveris mis uuendab automaatselt Blizzard api. 
+
+// Firebase:
+https://ah-sniper-18a60-default-rtdb.europe-west1.firebasedatabase.app/
+
+createnewitem MODAL uus aken
+
+
+. Valemid - 
+    Kasutaja loob ise valemid, valib otsingu+dropdowniga esemed ja loob 
+    esmete vahelise seose valemis.
+        nt: 
+            (ese1 * 4) + (ese2 * 9) = ese3 * 3
+
+            (ese4 * 10) + ese3 = ese5
+
+    Valemi kuvamine, kui esemetel erinevad hinnad. Nt
+        ese5 hind kui ese3 osta marketist
+        ese5 hind kui ese3 luua ese1 + ese2
+        ese5 hind kui algmaterjalid/esemed ise koguda. 
+        
+
+    kulu/tulu/kasumi kuvamine erinevate algmaterjali hindadega, 
+        - ühe eseme/tehingu tulu, mitme eseme tulu
+        - vajamineva algmaterjali kogus ja kulu. kui 'x' kogust on olemas, palju juurde vaja  
+        + kulu/tulu/kasumi kasutaja lisatud hindadega
+        + (v2.0)hindade kuvamine aeg/hind heatmapis  // https://www.highcharts.com/?credits
+
+    Kuidas ja mis süntaxi kasutada valemite jaoks?
+        uurida - react-mathjax
+            https://github.com/wko27/react-mathjax
+        
+
+
+. Leheküljed - 
+    Kasutaja vaade
+    Kasutaja valemite salvestamine
+    Kasutaja esemete salvestamine.
+    Eseme info (nt. link eseme wikile/UMJournal)
+    v1.0 - api token mille kaudu päringuid teha
+
+
+
+. Esemed - 
+    Eseme üld (nt. link eseme wikile/UMJournal)
+    Eseme hind/hinnad (AH hetke hind, vana hind, vendor )
+    Võimalusel, pilt dünaamiliselt laadida(scrape)
+
+    Kasutaja saab luua ja salvestada esemed.
+
+    { 
+        itemId: 172347
+        name: "nimi",
+        hind: 23.45,            //kuvatakse CSS'iga 23g 45s 
+        VendorBuyPrice: '',     // kui on
+        userPrice: 17.00,
+        //medianPrice: 24.22,     //Median, Mean jne. hindu ei saa Api päringust. v2.0
+        //meanPrice: 20.01,
+        //marketQuantity: 999
+        //playerOwnedQuantity: 0
+    }
+    
+    eseme wiki url: https://www.wowhead.com/item=172347
+    eseme market url: https://theunderminejournal.com/#eu/aegwynn/item/172347
+
+
+. Item card - 
+    simple+card mis tavaliselt reas (??) või näidata item'ite arrayd vihiku reana ja on hover näita lisainfot item cardina.
+    on hover näita itemi infot/kaarti
+
+
+
+4. Andmebaas - // Terve AH scan circe 100-200k eset. 
+    v0.1 Kohalik/serveri fail/andmebaas jälgimiseks lisatud esemetest, hinnad manuaalselt testi/arendus perioodiks. 
+    v1.0 Kohalik/serveri fail/andmebaas jälgimiseks lisatud esemetest, hinnad Api päringuga kasutaja poolt.
+    v2.0 Serveri andmebaas hinnad uuenevad serveri poolt api päringuga.
+
+
+
+
+
+
+x.BlizzardAPi
+    x.1 auth 
+    x.2 päringud kasutades auth tokenit. 
+
+
+retseptid:
+
+Flare:
+    Natural Pearl x20
+    Wild Flower x35
+    Silver x1200
+
+HP potion:
+    Shy Wild Flower x5
+    Wild Flower x10
+    Silver x1200
+
+

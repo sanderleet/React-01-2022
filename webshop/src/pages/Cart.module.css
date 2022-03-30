@@ -1,0 +1,71 @@
+
+
+.cartItem {
+    display: flex; /* esemedvasakult paremale */
+    justify-content: space-evenly; /* elemendid v]rdsetele kaugustele */
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 0;
+    margin: 0 10%;
+    padding: 10px;
+}
+
+.cartItemName {
+    width: 300px;
+}
+
+.cartItemPrice {
+    width: 70px;
+}
+
+.cartItemQuantity {
+    margin: 0 6px;
+}
+
+.cartItemQuantityControls {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartItemTotal {
+    width: 70px;
+    font-weight: 600;
+}
+
+.cartItemButton {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.cartItemButton:hover {
+    opacity: 1;
+}
+
+.cartSum {
+    font-weight: 600;
+    text-align: right;
+    margin-right: 20%;
+}
+
+.cartSum button {
+    border:none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    background-color: red;
+}
+
+.cartSum button:hover {
+    font-weight: bold;
+}
+
+
+
+.buttonDisabled {
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+}

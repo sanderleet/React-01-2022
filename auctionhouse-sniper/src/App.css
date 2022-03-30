@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+/*   box-sizing: border-box;
+ */  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', 'Lato', sans-serif ;
+
+}
+
+.home {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.dFlex, .crafting-overview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding:30px 50px 20px 50px;
+  box-sizing: border-box;
+
+}
+
+.crafting-overview {
+  position: relative;
+  height: 100%;
+  margin: 5px auto;
+  padding: 50px 5px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.crafting-overview h3{
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #2d343e;
+  font-size: 16;
+}
+
+
+.crafting-overview  {
+  width: 100%;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 50px;
+  
+}
+
+.crafting-overview, .card, .card_img {
+  margin-top: 1vw;
+}
+
+.card {
+  margin: 3px;
+  width: 170px;
+  height: 290px;
+}
+
+.card-header {
+  height: 140;
+}
+
+.card:hover{
+  border-color: rgba(221, 153, 26, 0.596);
+  opacity: 850%;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.card img {
+  display: flex;
+  align-content: center;
+  
+  width: 150px;
+  height: 150px;
+  border-radius: 20;
+}
+.center {   /*  //for images */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .item-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+    height: 300px;
+    border-radius: 20;
+    padding: 20px;
+    
+    
+} */
+
+ul {
+  margin: 0 auto;                  /* center container */
+  width: 100%;
+  padding-left: 0;                 /* remove list padding */
+  font-size: 0;                    /* remove inline-block white space;
+                                      see https://stackoverflow.com/a/32801275/3597276 */
+}
+
+.item-card li{
+    display: inline-flex; 
+    flex-wrap: wrap;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center; 
+    font-size: 18px;
+    list-style-type: none;
+}
+
+
+
+
+

@@ -14,6 +14,18 @@ function Menüü () {
         <button className='menyy-nupp'>PAKIAUTOMAADID</button>
         </Link>
 
+        <Link to="/tegelased">
+        <button className='menyy-nupp'>TEGELASED</button>
+        </Link>
+
+        <Link to="/autod">
+        <button className='menyy-nupp'>AUTOD</button>
+        </Link>
+
+        <Link to="/admin">
+        <button className='menyy-nupp'>ADMIN</button>
+        </Link>
+
 
     </div>)
 }
